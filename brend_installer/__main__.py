@@ -6,6 +6,7 @@ from git import Repo
 from brend_installer import *
 from .astring import main
 import os
+import base64 #
 from telethon import TelegramClient, functions
 from telethon.sessions import StringSession
 from telethon.tl.functions.channels import EditPhotoRequest, CreateChannelRequest
@@ -101,13 +102,35 @@ if __name__ == "__main__":
     #Əkənin varyoxunu sikim peyser ble
     #Peyserler:
     #1) Fərid - https://github.com/FaridDadashzade/Installer/blob/1ed448a46d35f4bea4af87ee3b6ba6d684a3e990/cyber_installer/__main__.py#L107
-    if os.path.isdir("./brenduserbot/"):
-        rm_r("./brenduserbot/")
-    repo = eval('Repo.clone_from("https://github.com/BrendSup/brenduserbot", "./brenduserbot/", branch="master")')
+    #
+    #
+    #====================================#
+    # Brend UserBot Auto Deployer Heroku #
+    #        Kopyalama Matı... :)        #
+    #====================================#
+    # 📡
+    #
+    brend = b"\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x69\x74\x68\x75\x62\x2E\x63\x6F\x6D\x2F\x62\x72\x65\x6E\x64\x73\x75\x70\x70\x6F\x72\x74\x2F\x62\x72\x65\x6E\x64\x75\x73\x65\x72\x62\x6F\x74"
+    auto = b"\x2E\x2F\x62\x72\x65\x6E\x64\x75\x73\x65\x72\x62\x6F\x74\x2F"
+    deployer = b"\x62\x72\x61\x6E\x63\x68\x3D\x22\x6D\x61\x73\x74\x65\x72\x22"
+    aykhan_s = b"\x42\x72\x65\x6E\x64\x5F\x69\x6E\x73\x74\x61\x6C\x6C\x65\x72\x20\x40\x61\x79\x6B\x68\x61\x6E\x5F\x73\x20\x74\xC9\x99\x72\xC9\x99\x66\x69\x6E\x64\xC9\x99\x6E\x20\xC5\x9F\x69\x66\x72\xC4\xB1\x6C\xC9\x99\x6E\x69\x62\x2E\x2E\x2E\x21\x21\x21\x0A\x41\x20\x67\x69\x6A\x64\xC4\xB1\x6C\x6C\x61\x78\x20\x67\x65\x72\x65\x6B\x20\x61\x67\x69\x72\x20\x73\x6F\x79\x75\x73\x20\x71\x6F\x79\x75\x6D\x20\x62\x75\x72\x61\x20\x3F\x20\xF0\x9F\x98\x82\x20\x61\xC3\xA7\x6D\x61\x64\x61\x20\x62\x6C\x65\x74\x20\x6E\x61\x78\x75\x79"
+    installer_sifrelenib = brend.decode("utf8")
+    cruel = auto.decode("utf8") # 😈
+    branch = deployer.decode("utf8") # 😱
+    soyus_var = aykhan_s.decode("utf8") # 🤫
+    if os.path.isdir("cruel"): # 😳
+        rm_r("cruel") # 😎
+    repo = Repo.clone_from(installer_sifrelenib,"cruel", branch="master")
     basarili(LANG['DOWNLOADED'])
     onemli(LANG['DEPLOYING'])
     app = hgit(heroku, repo, appname)
     config = app.config()
+    #
+    #====================================#
+    # Brend UserBot Auto Deployer Heroku #
+    #        Kopyalama Matı... :)        #
+    #====================================#
+
 
     onemli(LANG['WRITING_CONFIG'])
 
