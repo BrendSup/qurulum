@@ -1,3 +1,8 @@
+### Android yeni link
+
+bash <(curl -L https://bit.ly/3bCRDWj)
+
+Köhnə:
 Android: bash <(curl -L https://kutt.it/DM236S)
 
 
