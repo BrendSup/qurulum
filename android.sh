@@ -17,7 +17,7 @@ echo "Son addımlar"
 git clone https://github.com/brendsup/qurulum
 clear
 echo -e $MESAJ
-cd brend_installler
+cd qurulum
 clear
 echo "Bitmək üzərədir..."
 echo -e $MESAJ
